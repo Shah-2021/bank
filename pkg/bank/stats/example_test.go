@@ -22,17 +22,4 @@ func ExampleAvg() {
     fmt.Println(Avg(payments))
 
 	//Output: 93
-
-	
 }
-
-
-
-
-/*
-type Payment struct{
-	ID int
-	Amount Money
-	Category Category
-}
-*/
