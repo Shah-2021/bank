@@ -6,6 +6,15 @@ type Money int64
 // Category представляет собой категорию, в которой был совершён платёж (авто, аптеки, рестораны и т.д.)
 type Category string
 
+// Status представляет собой статус платежа
+type Status string
+
+// Предопределенные статусы платежей
+const (
+	StatusOk Status = "OK"
+	StatusFail Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+) 
 
 // Currency представляет код валюты
 type Currency string
@@ -37,6 +46,7 @@ type Payment struct{
 	ID int
 	Amount Money
 	Category Category
+	Status Status
 }
 
 // PaymentSource источник платежа
